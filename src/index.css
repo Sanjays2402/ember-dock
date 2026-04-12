@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/inter/v18/UcCo3FwrK3iLTcviYwY.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FPpPFrEFGYTkEIwg.woff2') format('woff2');
+}
+
+:root {
+  --bg: #0c0c10;
+  --dock-bg: rgba(12, 12, 18, 0.95);
+  --dock-border: rgba(255, 255, 255, 0.06);
+  --active-glow: #e8913a;
+  --active-glow-soft: rgba(232, 145, 58, 0.3);
+  --text-primary: #e8e8ec;
+  --text-muted: #5a5a66;
+  --icon-inactive: #5a5a66;
+  --icon-active: #ffffff;
+  --badge-red: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
